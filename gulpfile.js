@@ -26,6 +26,6 @@ exports.default = function(done) {
 		.pipe(rollup(ROLLUP__OPTION))
 		.pipe(plumber())
 		.pipe(babel(BABEL_OPTION))
-		.pipe(rename('dashboard.min.js'))
-		.pipe(dest('./dist'))
+		.pipe(rename('angular-dashboard-router.js'))
+		.pipe(dest('./build'))
   };
